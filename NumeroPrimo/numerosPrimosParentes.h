@@ -3,7 +3,7 @@
 //
 
 /*
- * Código ainda com erro!
+ * Funcionando derrota
  */
 
 #include <stdlib.h>
@@ -35,29 +35,20 @@ int ehPrimo(int num)
 
 void primoParente()
 {
-    int num = 11, k = 0;
-    char primosProximos[100000] = {};
+    int num = 0, primo = 0;
 
-    if(ehPrimo(num) == 1)
-    {
-        for (int i = 1; i < num; ++i) {
-            if(ehPrimo(i) == 1)
-            {
-                while (k < num)
-                {
-                    primosProximos[k] = i;
-                    k++;
-                }
+    printf("Digite um numero: ");
+    scanf("%i", &num);
 
-            }
-
+    for (int i = 1; i < num; ++i) {
+        if(ehPrimo(i) == 1)
+        {
+            primo = i;
         }
 
-        for (int i = 0; i < strlen(primosProximos); i++) {
-            printf("%s", primosProximos[i]);
-        }
-    }else{
-        printf("Não é um numero primo");
     }
+
+        printf("%i", primo);
+
 
 }

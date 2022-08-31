@@ -1,6 +1,6 @@
-#include "Receita-Federal/imposto.h"
+#include "NumeroPrimo/numerosPrimosParentes.h"
 
 void main()
 {
-    imposto();
+    primoParente();
 }

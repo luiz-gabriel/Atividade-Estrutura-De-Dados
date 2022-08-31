@@ -2,9 +2,12 @@
 // Created by luizg on 30/08/2022.
 //
 
+/*
+ * Código ainda com erro!
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
-#include <stdbool.h>
 #include <string.h>
 
 int ehPrimo(int num)

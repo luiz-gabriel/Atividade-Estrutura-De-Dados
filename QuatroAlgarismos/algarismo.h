@@ -1,28 +1,15 @@
 //
 // Created by luizg on 31/08/2022.
+//17
 //
 #include <stdio.h>
 #include <string.h>
 
-void teste()
-{
-    char str1[] = "12";
-    char str2[] = "30";
 
-    strcat(str1, ":");
-
-    printf("str1 depois de strcat(str1, \":\"):\n%s", str1);
-
-    strcat(str1, str2);
-
-    printf("\nstr1 depois de strcat(str1, str2):\n%s", str1);
-
-
-}
 
 void algorismo()
 {
-   // teste();
+
 
     int n1 = 0, n2 = 0;
 
@@ -43,7 +30,6 @@ void algorismo()
 
     }
 
-    printf("%i * %i == %i", 3337 / 100, 3337 % 100, (3337 / 100) + (3337 / 100) * (3337 / 100) + (3337 / 100));
 
 
 }

@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-
+// 34
 void reflexo()
 {
     clock_t start_t, end_t;

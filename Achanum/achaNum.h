@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+// 31
 void achaNum()
 {
     int num1 = 0, num2 = 0;

@@ -1,6 +1,6 @@
-#include "NumeroPrimo/numerosPrimosParentes.h"
+#include "60/Vetor.h"
 
 void main()
 {
-    primoParente();
+    vetor();
 }

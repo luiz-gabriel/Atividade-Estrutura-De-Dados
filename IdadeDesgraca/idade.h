@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// 26
 void idadeVeia()
 {
     int a = 0, b = 0, i = 0, j = 0;

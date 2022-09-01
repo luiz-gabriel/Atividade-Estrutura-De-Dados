@@ -1,5 +1,6 @@
 //
 // Created by luizg on 31/08/2022.
+// 17
 //
 #include <stdio.h>
 void multiplos()

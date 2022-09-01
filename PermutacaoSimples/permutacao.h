@@ -1,79 +1,35 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-/*
+//32 Não funciona
 void permutacao()
 {
-
     unsigned int num;
-    int i = 0, j = 0, k = 0;
-    char number[100000] = {}, n[100000] = {};
+    char nums[10000] = {};
 
 
-    printf("Digite um numero: ");
-    scanf("%u", &num);
+    printf("Digite um numero positivo: ");
+    scanf("%i", &num);
 
-    sprintf(number, "%u", num);
+    if(!(num > 0)){
+        permutacao();
+    }
 
-    int tamanho = strlen(number);
+    sprintf(nums, "%i", num);
+    puts(nums);
+    for (int i = 1; i <= strlen(num);) {
 
-    while (i <= tamanho)
-    {
-        if(tamanho - j > 0){
-            n[i] = tamanho - j;
-            break;
-        }else{
-            break;
+        for (int j = 1; j <= strlen(num); ) {
+            nums[i] = nums[j];
+            j++;
         }
-        j+= 1;
-        i+= 1;
+
+        i++;
+
     }
 
-    int mult = 1;
-    while (k < strlen(n)){
-        mult = mult * n[k];
-        k++;
-    }
-
-    printf("%i",mult);
 
 }
-     */
-
-    typedef char * string;
-
-    void troca_char(string str, int p1, int p2)
-    {
-        char tmp;
-        tmp = str[p1];
-        str[p1] = str[p2];
-        str[p2] = tmp;
-    }
-
-    void permutacao(string str, int k)
-    {
-        int i, len;
-        len = strlen(str);
-
-        if (k == len)
-            printf( "%s\n", str);
-        else
-        {
-            for (i = k; i < len; i++)
-            {
-                troca_char(str, k, i);
-                permutacao(str, k + 1);
-                troca_char(str, i, k);
-            }
-        }
-    }
-
-    void lista_permutacoes(string str)
-    {
-        permutacao(str, 0);
-    }
-
 
 
 

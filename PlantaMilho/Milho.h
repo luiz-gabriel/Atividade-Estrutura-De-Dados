@@ -1,7 +1,7 @@
 //
 // Created by luizg on 31/08/2022.
 //
-
+//41
 #include <stdio.h>
 float germina(int milhos){
     int sementes = milhos  * 2;
